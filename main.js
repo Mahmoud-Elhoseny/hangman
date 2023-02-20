@@ -140,10 +140,6 @@ document.addEventListener("click", (e) => {
 
             // Add Class Wrong On The Draw Element
             theDraw.classList.add(`wrong-${wrongAttempts}`);
-
-            // Play Fail Sound
-            document.getElementById("fail").play();
-
             if (wrongAttempts === 8) {
 
                 endGame();
@@ -151,11 +147,6 @@ document.addEventListener("click", (e) => {
                 lettersContainer.classList.add("finished");
 
             }
-
-        } else {
-
-            // Play Success Sound
-            document.getElementById("success").play();
 
         }
 
